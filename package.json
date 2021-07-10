@@ -1,0 +1,31 @@
+{
+	"name": "hack-electron",
+	"version": "0.0.1",
+	"displayName": "HackElectron",
+	"description": "Vscode Themes",
+	"publisher": "TheVoidsteppers",
+	"repository": "https://github.com/TheVoidsteppers/hack-electron",
+	"license": "MIT",
+	"keywords": [
+		"green",
+		"hacker",
+		"hack",
+		"electron"
+	],
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "HackElectron",
+				"uiTheme": "vs-dark",
+				"path": "./themes/hack-electron-color-theme.json"
+			}
+		]
+	}
+}
