@@ -12,6 +12,9 @@
 		"hack",
 		"electron"
 	],
+	"scripts": {
+		"build": "node ./script/build.js"
+	},
 	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.41.0"
