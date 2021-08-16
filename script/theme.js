@@ -1,8 +1,10 @@
 // 基础色 
 const Green = '#33cc33' // 绿色
-const Green_95 = '#33cc3395' // 绿色 0.95 透明度
-const Green_90 = '#33cc3390' // 绿色 0.90 透明度
-const Green_15 = '#33cc3315' // 绿色 0.15 透明度
+const Green_95 = '#33cc3395' // 绿色 95 透明度
+const Green_90 = '#33cc3390' // 绿色 90 透明度
+const Green_50 = '#33cc3350' // 绿色 50 透明度
+const Green_20 = '#33cc3320' // 绿色 20 透明度
+const Green_15 = '#33cc3315' // 绿色 15 透明度
 
 const DarkGreen = '#3ba73b' // 深绿
 const DarkGreen_75 = '#3ba73b75' // 深绿
@@ -16,6 +18,7 @@ const BackgroundColor = '#16171d' // 背景色
 const ActiveBackgroundColor = '#21222c' // 激活下的背景色
 const ActiveBackgroundColor_95 = '#21222c95' // 激活下的背景色
 const LightBlack = '#2c2d3a' // 黑色
+const LightBlack_b0 = '#2c2d3ab0' // 黑色
 const LightBlack_80 = '#2c2d3a80' // 黑色
 const LightBlack_50 = '#2c2d3a50' // 黑色
 
@@ -28,6 +31,7 @@ const White = '#bbd1dd' // 白色
 const Orange = '#ff661a' // 橙色
 
 const Yellow = '#ffff99' // 黄色
+const DarkYellow = '#C7BA00' // 暗黄色
 const BrightYellow = '#ffff1a' // 亮黄色
 
 const Blue = '#268BD2' // 蓝色
@@ -39,6 +43,9 @@ const Magenta = '#9933ff' // 品红
 const themeJson = {
   "name": "Hack Electron",
   "colors": {
+    "focusBorder": `${Purple}`,
+    "selection.background": `${Green_90}`,
+    "errorForeground": `${Red}`,
     "activityBarBadge.background": `${Indigo}`,
     "activityBar.activeBorder": `${Purple}`,
     "activityBar.activeBackground": `${ActiveBackgroundColor}`,
@@ -77,10 +84,10 @@ const themeJson = {
     "editor.hoverHighlightBackground": `${ActiveBackgroundColor}`,
     "editor.lineHighlightBackground": `${Green_15}`,
     "editor.rangeHighlightBackground": `${BackgroundColor}`,
-    "editor.selectionBackground": `${DarkGreen_75}`,
-    "editor.selectionHighlightBackground": `${Green_95}`,
+    "editor.selectionBackground": `${Green_50}`,
+    "editor.inactiveSelectionBackground": `${Green_50}`,
+    "editor.selectionHighlightBackground": `${Green_20}`,
     "errorForeground": `${White}`,
-    "focusBorder": `${Indigo}`,
     "inputOption.activeBorder": `${Purple}`,
     "inputValidation.errorBackground": `${ActiveBackgroundColor}`,
     "inputValidation.errorBorder": `${Indigo}`,
@@ -102,6 +109,9 @@ const themeJson = {
     "list.inactiveSelectionForeground": `${Green}`,
     "minimap.findMatchHighlight": `${White}`,
     "minimap.selectionHighlight": `${Green}`,
+    "minimapSlider.background": `${LightBlack_80}`,
+    "minimapSlider.hoverBackground": `${LightBlack_b0}`,
+    "minimapSlider.activeBackground": `${LightBlack_b0}`,
     "notificationCenterHeader.foreground": `${Green}`,
     "notificationCenterHeader.background": `${LightBlack}`,
     "notifications.background": `${ActiveBackgroundColor}`,
@@ -118,10 +128,9 @@ const themeJson = {
     "pickerGroup.border": `${Indigo}`,
     "pickerGroup.foreground": `${ActiveBackgroundColor}`,
     "progressBar.background": `${Indigo}`,
-    "selection.background": `${Green_90}`,
-    "scrollbarSlider.activeBackground": `${LightBlack_80}`,
+    "scrollbarSlider.activeBackground": `${LightBlack_b0}`,
     "scrollbarSlider.background": `${LightBlack_80}`,
-    "scrollbarSlider.hoverBackground": `${LightBlack_80}`,
+    "scrollbarSlider.hoverBackground": `${LightBlack_b0}`,
     "settings.checkboxBorder": `${Indigo}`,
     "settings.checkboxForeground": `${White}`,
     "settings.dropdownForeground": `${White}`,
@@ -160,11 +169,14 @@ const themeJson = {
     "terminal.ansiBrightCyan": "#00ffff",
     "terminal.ansiBrightWhite": "#c4edc4",
     "terminal.foreground": `${White}`,
-    "tree.indentGuidesStroke": `${ActiveBackgroundColor}`
+    "tree.indentGuidesStroke": `${ActiveBackgroundColor}`,
+    "editorWarning.foreground": `${BrightYellow}`,
   },
   "tokenColors": [
     {
-      "name": "Comment"
+      "name": "Comment",
+      "scope": [],
+      "settings": {}
     },
     {
       "name": "Comment",
@@ -182,7 +194,7 @@ const themeJson = {
         "string"
       ],
       "settings": {
-        "foreground": `${BrightYellow}`
+        "foreground": `${DarkYellow}`
       }
     },
     {
@@ -526,7 +538,7 @@ const themeJson = {
         "string.quoted.js"
       ],
       "settings": {
-        "foreground": "#C7BA00"
+        "foreground": `${DarkYellow}`
       }
     }
   ]

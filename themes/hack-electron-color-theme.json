@@ -1,6 +1,9 @@
 {
   "name": "Hack Electron",
   "colors": {
+    "focusBorder": "#a64dff",
+    "selection.background": "#33cc3390",
+    "errorForeground": "#bbd1dd",
     "activityBarBadge.background": "#486484",
     "activityBar.activeBorder": "#a64dff",
     "activityBar.activeBackground": "#21222c",
@@ -39,10 +42,9 @@
     "editor.hoverHighlightBackground": "#21222c",
     "editor.lineHighlightBackground": "#33cc3315",
     "editor.rangeHighlightBackground": "#16171d",
-    "editor.selectionBackground": "#3ba73b75",
-    "editor.selectionHighlightBackground": "#33cc3395",
-    "errorForeground": "#bbd1dd",
-    "focusBorder": "#486484",
+    "editor.selectionBackground": "#33cc3350",
+    "editor.inactiveSelectionBackground": "#33cc3350",
+    "editor.selectionHighlightBackground": "#33cc3320",
     "inputOption.activeBorder": "#a64dff",
     "inputValidation.errorBackground": "#21222c",
     "inputValidation.errorBorder": "#486484",
@@ -64,6 +66,9 @@
     "list.inactiveSelectionForeground": "#33cc33",
     "minimap.findMatchHighlight": "#bbd1dd",
     "minimap.selectionHighlight": "#33cc33",
+    "minimapSlider.background": "#2c2d3a80",
+    "minimapSlider.hoverBackground": "#2c2d3ab0",
+    "minimapSlider.activeBackground": "#2c2d3ab0",
     "notificationCenterHeader.foreground": "#33cc33",
     "notificationCenterHeader.background": "#2c2d3a",
     "notifications.background": "#21222c",
@@ -80,10 +85,9 @@
     "pickerGroup.border": "#486484",
     "pickerGroup.foreground": "#21222c",
     "progressBar.background": "#486484",
-    "selection.background": "#33cc3390",
-    "scrollbarSlider.activeBackground": "#2c2d3a80",
+    "scrollbarSlider.activeBackground": "#2c2d3ab0",
     "scrollbarSlider.background": "#2c2d3a80",
-    "scrollbarSlider.hoverBackground": "#2c2d3a80",
+    "scrollbarSlider.hoverBackground": "#2c2d3ab0",
     "settings.checkboxBorder": "#486484",
     "settings.checkboxForeground": "#bbd1dd",
     "settings.dropdownForeground": "#bbd1dd",
@@ -122,11 +126,14 @@
     "terminal.ansiBrightCyan": "#00ffff",
     "terminal.ansiBrightWhite": "#c4edc4",
     "terminal.foreground": "#bbd1dd",
-    "tree.indentGuidesStroke": "#21222c"
+    "tree.indentGuidesStroke": "#21222c",
+    "editorWarning.foreground": "#ffff1a"
   },
   "tokenColors": [
     {
-      "name": "Comment"
+      "name": "Comment",
+      "scope": [],
+      "settings": {}
     },
     {
       "name": "Comment",
@@ -144,7 +151,7 @@
         "string"
       ],
       "settings": {
-        "foreground": "#ffff1a"
+        "foreground": "#C7BA00"
       }
     },
     {
