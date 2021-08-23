@@ -1,17 +1,26 @@
 # HackElectron
 
-#### vscode 主题
-- 主颜色为绿色, 次颜色为紫色
+HackElectron Theme for VS Code
 
-#### 使用
-- 1、vscode 拓展商店搜索 `HackElectron`
+## Previews
 
-- 2、下载 hack-electron-0.0.1.vsix 在 vscode 的拓展的下拉里 选择 `从vsix安装`
+![vue](./images/VUE.png)
+![js](./images/JS.png)
+![scss](./images/SCSS.png)
 
-- 3、
-  
-  ```shell
-  #下载源码 运行以下命令,生成 hack-electron-0.0.1.vsix 文件， 再执行第二步操作
-  npm install -g vsce
-  vsce package 
-  ```
+#### Getting started
+
+You can install this theme through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TheVoidsteppers.hack-electron)
+
+1.  Open **Extensions** sidebar panel in VS Code. `View → Extensions`
+2.  Search for `HackElectron`
+3.  Click **Install** to install the theme
+4.  Click **Reload** to reload your editor
+5.  _File > Preferences > Settings > Workbench > Color Theme >_ **HackElectron**
+6.  Optional: Use the recommended settings below for best experience
+
+## Installation via command line
+
+    $ git clone https://github.com/TheVoidsteppers/hack-electron.git ~/.vscode/extensions/HackElectron
+    $ cd ~/.vscode/extensions/HackElectron
+    $ npm run build
