@@ -10,9 +10,10 @@ const DarkGreen = '#3ba73b' // 深绿
 const DarkGreen_75 = '#3ba73b75' // 深绿
 
 const Purple = '#a64dff' // 紫色
-const Purple_95 = '#a64dff95' // 紫色
-const Purple_90 = '#a64dff90' // 紫色
-const Purple_85 = '#a64dff85' // 紫色
+const Purple_95 = '#a64dff95' // 紫色 95
+const Purple_90 = '#a64dff90' // 紫色 90
+const Purple_85 = '#a64dff85' // 紫色 85
+const Purple_30 = '#a64dff30' // 紫色 30
 
 const BackgroundColor = '#16171d' // 背景色
 const ActiveBackgroundColor = '#21222c' // 激活下的背景色
@@ -105,7 +106,7 @@ const themeJson = {
     "list.focusBackground": `${LightBlack_50}`,
     "list.highlightForeground": `${Green}`,
     "list.hoverBackground": `${LightBlack_50}`,
-    "list.inactiveSelectionBackground": `${BackgroundColor}`,
+    "list.inactiveSelectionBackground": `${Purple_30}`,
     "list.inactiveSelectionForeground": `${Green}`,
     "minimap.findMatchHighlight": `${White}`,
     "minimap.selectionHighlight": `${Green}`,

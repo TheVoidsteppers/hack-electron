@@ -62,7 +62,7 @@
     "list.focusBackground": "#2c2d3a50",
     "list.highlightForeground": "#33cc33",
     "list.hoverBackground": "#2c2d3a50",
-    "list.inactiveSelectionBackground": "#16171d",
+    "list.inactiveSelectionBackground": "#a64dff30",
     "list.inactiveSelectionForeground": "#33cc33",
     "minimap.findMatchHighlight": "#bbd1dd",
     "minimap.selectionHighlight": "#33cc33",
